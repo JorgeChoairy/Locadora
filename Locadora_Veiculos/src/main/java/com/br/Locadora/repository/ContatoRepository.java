@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
+
 public interface ContatoRepository extends JpaRepository<Contato, Long> {
 
     @Query("SELECT c FROM Contato c WHERE LOWER(c.nome) LIKE LOWER(CONCAT('%', :nome, '%'))")
@@ -25,4 +26,3 @@ public interface ContatoRepository extends JpaRepository<Contato, Long> {
 
     List<Contato> findByTelefoneContainingIgnoreCase(String telefone);
 }
-
