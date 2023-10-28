@@ -4,7 +4,6 @@ Projeto de Back End II
 Faculdade Uniesp João Pessoa
 Curso: Sistemas para Internet P4
 Professor Andre Farias
-Faculdade Uniesp João Pessoa
 
 Desenvolvimento de um projeto Java com Spring
 
