@@ -1,10 +1,14 @@
 # Projeto_Locadora de Veículos
 Projeto de Back End II
 
+Faculdade Uniesp João Pessoa
+Curso: Sistemas para Internet P4
 Professor Andre Farias
 Faculdade Uniesp João Pessoa
 
 Desenvolvimento de um projeto Java com Spring
+
+Sistema de aluguel de veiculos
 
 - Este projeto Java com Spring tem como objetivo criar um sistema voltado para aluguel de veículos (carros e motos).
 - O sistema contém a seguinte estrutura: Aluguel, Veiculos, Pagamento, Cliente, Funcionário e Contato.
