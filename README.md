@@ -5,7 +5,7 @@ Faculdade Uniesp João Pessoa
 Curso: Sistemas para Internet P4
 Professor Andre Farias
 
-Desenvolvimento de um projeto Java com Spring
+# Proposta de um modelo de sistema para locação de veículos em Java utilizando o framework Spring Boot e banco de dados MySQL
 
 Sistema de aluguel de veiculos
 
