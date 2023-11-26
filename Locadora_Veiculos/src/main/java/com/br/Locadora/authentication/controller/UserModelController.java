@@ -9,13 +9,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.authentication.AuthenticationManager;
-
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 
 @Controller
 @RequestMapping("/auth")
@@ -32,9 +31,9 @@ public class UserModelController {
 
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     @RequestMapping(value = "/criar-usuario", method = RequestMethod.POST)
-    public ResponseEntity<UserDTO> criarUsuario(@RequestBody UserDTO user) {
-        UserModel userModel = service.criarUsuario(user); // Este método deve retornar um UserModel
-        return ResponseEntity.status(201).body(user);
+    public ResponseEntity<UserDTO> criarUsuario (@RequestBody UserDTO user) {
+
+        return ResponseEntity.status(201).body(service.criarUsuario(user));
     }
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
