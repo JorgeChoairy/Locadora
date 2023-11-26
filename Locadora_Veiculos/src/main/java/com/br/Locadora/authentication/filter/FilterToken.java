@@ -18,10 +18,6 @@ import java.io.IOException;
 @Component
 @Transactional
 public class FilterToken extends OncePerRequestFilter {
-
-    @Autowired
-    TokenService tokenService;
-
     @Autowired
     UserDetailsServiceImpl userDetailsService;
 
