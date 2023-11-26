@@ -1,4 +1,8 @@
 package com.br.Locadora.enuns;
 
-public class RoleName {
+public enum RoleName {
+
+    ROLE_ADMIN,
+    ROLE_USER,
+
 }
