@@ -24,5 +24,9 @@ public class Cliente implements Serializable {
     private String endereco;
     private String telefone;
 
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "contato_id")
+    private Contato contato;
+
     // Getters and setters
 }

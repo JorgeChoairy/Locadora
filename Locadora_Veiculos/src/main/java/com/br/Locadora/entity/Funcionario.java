@@ -22,6 +22,10 @@ public class Funcionario implements Serializable {
     private String cargo;
     private Double salario;
 
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "contato_id")
+    private Contato contato;
+
     // Getters and setters
 }
 
