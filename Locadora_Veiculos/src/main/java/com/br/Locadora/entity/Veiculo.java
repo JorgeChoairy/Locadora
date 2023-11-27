@@ -25,5 +25,4 @@ public class Veiculo implements Serializable {
     private Double precoDiaria;
     private Boolean disponivel;
 
-    // Getters and setters
 }

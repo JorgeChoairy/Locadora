@@ -20,5 +20,4 @@ public class Contato {
     private String email;
     private String telefone;
 
-    // Getters and setters
 }

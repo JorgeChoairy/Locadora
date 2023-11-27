@@ -30,9 +30,6 @@ public class UserDetailsServicelmpl implements UserDetailsService {
         return userRepository.findByUserName(username)
                 .orElseThrow(()-> new UsernameNotFoundException("Não foi encontrado o usúario:" + username));
 
-        //     return new User(userModel.getUserName(),
-        //            userModel.getPassword(), true, true,
-        //             true, true,userModel.getAuthorities());
     }
 
     @Transactional

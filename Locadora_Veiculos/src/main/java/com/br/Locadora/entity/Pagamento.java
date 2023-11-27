@@ -22,7 +22,6 @@ public class Pagamento implements Serializable {
     private Aluguel aluguel;
 
     private Double valor;
-    private Boolean status; // indica se o pagamento foi confirmado ou não
+    private Boolean status; // indica se o pagamento foi confirmado ou não, s/n (mod)
 
-    // Getters and setters
 }

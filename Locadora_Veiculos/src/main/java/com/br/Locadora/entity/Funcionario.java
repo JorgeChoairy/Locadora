@@ -26,6 +26,5 @@ public class Funcionario implements Serializable {
     @JoinColumn(name = "contato_id")
     private Contato contato;
 
-    // Getters and setters
 }
 
