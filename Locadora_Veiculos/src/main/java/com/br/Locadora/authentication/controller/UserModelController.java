@@ -2,7 +2,7 @@ package com.br.Locadora.authentication.controller;
 
 import com.br.Locadora.authentication.model.UserModel;
 import com.br.Locadora.authentication.service.TokenService;
-import com.br.Locadora.authentication.service.UserDetailsServiceImpl;
+import com.br.Locadora.authentication.service.UserDetailsServicelmpl;
 import com.br.Locadora.dto.TokenDto;
 import com.br.Locadora.dto.UserDTO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class UserModelController {
 
     @Autowired
-    UserDetailsServiceImpl service;
+    UserDetailsServicelmpl service;
 
     @Autowired
     private AuthenticationManager authenticationManager;

@@ -1,7 +1,7 @@
 package com.br.Locadora.authentication.filter;
 
 import com.br.Locadora.authentication.service.TokenService;
-import com.br.Locadora.authentication.service.UserDetailsServiceImpl;
+import com.br.Locadora.authentication.service.UserDetailsServicelmpl;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -23,7 +23,7 @@ public class FilterToken extends OncePerRequestFilter {
     @Autowired
     TokenService tokenService;
     @Autowired
-    UserDetailsServiceImpl userDetailsService;
+    UserDetailsServicelmpl userDetailsService;
 
     @Override
     protected void doFilterInternal(@NotNull HttpServletRequest request,
