@@ -31,8 +31,8 @@ public class SecurityConfig {
         http
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/veiculos/**").hasRole("USER")
-                .antMatchers("/usuarios/**").hasRole("ADMIN")
+                .antMatchers("/cliente/**").hasRole("USER")
+                .antMatchers("/funcionario/**").hasRole("ADMIN")
                 .antMatchers("/auth/**").permitAll()
                 .antMatchers("/v2/api-docs", "/swagger-resources/**", "/webjars/**", "/swagger-ui/**").permitAll()
                 .anyRequest().authenticated()
