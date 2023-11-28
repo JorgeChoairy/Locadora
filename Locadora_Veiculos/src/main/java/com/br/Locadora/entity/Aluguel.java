@@ -40,5 +40,4 @@ public class Aluguel implements Serializable {
     private Double valorTotal;
     private Boolean pago;
 
-    // Getters and setters
 }

@@ -28,5 +28,4 @@ public class Cliente implements Serializable {
     @JoinColumn(name = "contato_id")
     private Contato contato;
 
-    // Getters and setters
 }

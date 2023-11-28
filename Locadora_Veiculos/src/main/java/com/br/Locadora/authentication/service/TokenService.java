@@ -31,20 +31,6 @@ public class TokenService {
         algorithm = Algorithm.HMAC256(secretKey.getBytes());
     }
 
-    //public String gerarToken(UserModel usuario){
-
-//        return JWT.create()
-//                .withClaim("roles", usuario.getRoles().stream()
-//                        .map( u -> u.getRoleName().toString())
-//                        .toList())
-//                .withSubject(usuario.getUsername())
-//                .withIssuer("alunoOline")
-//                .withExpiresAt(Date.from(LocalDateTime.now()
-//                        .plusMinutes(10)
-//                        .toInstant(ZoneOffset.of("-03:00"))))
-//                .sign(Algorithm.HMAC256("secreta"));
-
-    // }
 
     public TokenDto gerarToken(UserModel usuario) {
 
@@ -88,16 +74,5 @@ public class TokenService {
         return JWT.require(Algorithm.HMAC256(secretKey.getBytes()))
                 .build().verify(token).getSubject();
     }
-
-//    public TokenDto refreshToken(String refreshToken) {
-//        if (refreshToken.contains("Bearer ")) refreshToken =
-//                refreshToken.substring("Bearer ".length());
-//
-//        JWTVerifier verifier = JWT.require(algorithm).build();
-//        DecodedJWT decodedJWT = verifier.verify(refreshToken);
-//        String username = decodedJWT.getSubject();
-//        List<String> roles = decodedJWT.getClaim("roles").asList(String.class);
-//        return gerarToken(username, roles);
-//    }
 
 }
